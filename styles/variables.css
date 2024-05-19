@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --color-svg: oklch(100% 0 0);
+  --accent-color-heart: oklch(62.8% 0.25768330773615683 29.2338851923426);
+  --contour-color: var(--main-color);
+  --label-color: oklch(100% 0 0);
+  --background-color: oklch(100% 0 0);
+  --main-color: oklch(0% 0 0);
+  --button-span: oklch(100% 0 0);
+  --main-text: 'Inter-Variable';
+  --accent-text: 'Press Start 2P';
+  --main-weight: 400;
+  --title-weight: 700;
+  --gradient-right: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px);
+  --gradient-bottom: repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px);
+  --gradient-color: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
