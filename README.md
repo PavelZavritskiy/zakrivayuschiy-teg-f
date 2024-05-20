@@ -14,15 +14,15 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
 </div>
 
-## Ссылка на [репозиторий](https://github.com/PavelZavritskiy/zakrivayuschiy-teg-f.git) <br> Ссылка на опубликованный [сайт](https://pavelzavritskiy.github.io/zakrivayuschiy-teg-f/)
+## Ссылка на <a href="https://github.com/PavelZavritskiy/zakrivayuschiy-teg-f.git" target="_blank">репозиторий</a> <br> Ссылка на опубликованный <a href="https://pavelzavritskiy.github.io/zakrivayuschiy-teg-f/" target="_blank">сайт</a>
 
 # Автор: Заврицкий Павел
 
 <div id="contacts">
-  <a href="https://t.me/zavrik127">
+  <a href="https://t.me/zavrik127" target="_blank">
     <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
   </a>
-  <a href="https://vk.com/id685299156">
+  <a href="https://vk.com/id685299156" target="_blank">
     <img src="https://img.shields.io/badge/VK-blue?style=for-the-badge&logo=vk&logoColor=white" alt="VK"/>
   </a>
 </div>
