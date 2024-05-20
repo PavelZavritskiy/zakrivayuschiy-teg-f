@@ -26,3 +26,5 @@
     <img src="https://img.shields.io/badge/VK-blue?style=for-the-badge&logo=vk&logoColor=white" alt="VK"/>
   </a>
 </div>
+
+![Jokes Card](https://readme-jokes.vercel.app/api)
