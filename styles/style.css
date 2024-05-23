@@ -195,8 +195,8 @@
 }
 
 .image {
-  border-block: 2px solid var(--main-color, #000);
   display: block;
+  border-block: 2px solid var(--main-color, #000);
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
@@ -436,6 +436,6 @@
 
 .dialog__button {
   padding: 10px 114.5px;
-  inline-size: 100%;
   text-transform: uppercase;
+  inline-size: 100%;
 }

@@ -20,15 +20,16 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
-      <div class="header__logo">
-        <a class="header__decor">&lt;/HTML&gt;</a>
+    <header aria-label="Шапка сайта" class="header">
+      <div aria-label="Логотип сайта" class="header__logo">
+        <a aria-hidden="true" class="header__decor">&lt;/HTML&gt;</a>
         <h1 class="header__title">закрывающий тег</h1>
       </div>
-      <nav class="theme-menu header__theme-menu">
+      <nav aria-label="Меню переключения тем" class="theme-menu header__theme-menu">
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
             <button 
+              aria-label="Кнопка переключения тем"
               title="Переключение на тёмную тему" 
               type="button" 
               data-theme="dark" 
@@ -39,6 +40,7 @@
           </li>
           <li class="theme-menu__item">
             <button
+              aria-label="Кнопка переключения тем"
               title="Переключение на автоматическую тему" 
               type="button"
               data-theme="auto"
@@ -50,6 +52,7 @@
           </li>
           <li class="theme-menu__item">
             <button
+              aria-label="Кнопка переключения тем"
               title="Переключение на светлую тему" 
               type="button" 
               data-theme="light" 
@@ -61,8 +64,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <article class="main__article">
+    <main aria-label="Основной контент" class="main">
+      <article aria-label="Блок с контентом" class="main__article">
         <h2 class="article__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="label__wrapper">
           <picture>
@@ -112,7 +115,7 @@
           </div>
         </div>
       </article>
-      <article class="main__article">
+      <article aria-label="Блок с контентом" class="main__article">
         <h2 class="article__title">1 спринт: Я — чистый лист</h2>
         <div class="label__wrapper">
           <picture>
@@ -162,7 +165,7 @@
           </div>
         </div>
       </article>
-      <article class="main__article">
+      <article aria-label="Блок с контентом" class="main__article">
         <h2 class="article__title">1 спринт: А если не получится?</h2>
         <div class="label__wrapper">
           <picture>
@@ -212,7 +215,7 @@
           </div>
         </div>
       </article>
-      <article class="main__article">
+      <article aria-label="Блок с контентом" class="main__article">
         <h2 class="article__title">2 спринт: Погоня за идеалом</h2>
         <div class="label__wrapper">
           <picture>
@@ -262,7 +265,7 @@
           </div>
         </div>
       </article>
-      <article class="main__article">
+      <article aria-label="Блок с контентом" class="main__article">
         <h2 class="article__title">2 спринт: О тех, кто рядом</h2>
         <div class="label__wrapper">
           <picture>
@@ -312,7 +315,7 @@
           </div>
         </div>
       </article>
-      <article class="main__article">
+      <article aria-label="Блок с контентом" class="main__article">
         <h2 class="article__title">3 спринт: Обходные стратегии</h2>
         <div class="label__wrapper">
           <picture>
@@ -362,7 +365,7 @@
           </div>
         </div>
       </article>
-      <article class="main__article">
+      <article aria-label="Блок с контентом" class="main__article">
         <h2 class="article__title">3 спринт: Когда опускаются руки</h2>
         <div class="label__wrapper">
           <picture>
@@ -412,7 +415,7 @@
           </div>
         </div>
       </article>
-      <article class="main__article">
+      <article aria-label="Блок с контентом" class="main__article">
         <h2 class="article__title">«Сейчас я здесь»</h2>
         <div class="label__wrapper">
           <picture>
@@ -463,21 +466,22 @@
         </div>
       </article>
       <button
+        aria-label="Кнопка для открытия дополнительного раздела"
         title="Открыть дополнительное окно"
         class="save__button button"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
-        <svg class="floppy-image" viewBox="0 0 28 28">
+        <svg aria-hidden="true"  class="floppy-image " viewBox="0 0 28 28">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button> 
     </main>
-    <dialog class="dialog" id="dialog-id">
+    <dialog aria-label="Дополнительное окно" class="dialog" id="dialog-id">
       <div class="dialog__wrapper">
-        <svg class="floppy-image" viewBox="0 0 28 28">
+        <svg aria-hidden="true" class="floppy-image" viewBox="0 0 28 28">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
