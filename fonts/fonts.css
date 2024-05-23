@@ -1,7 +1,9 @@
 @font-face {
   font-family: 'Inter-Variable';
   src: local('Inter-Variable'), 
-      url(./Inter-Variable.woff2) format('woff2 supports variations'),
+      url(./Inter-Variable.woff2) format('woff2 supports variations'), /* Ну я подключил двумя форматами, так было написано в чек листе.
+      "При подключении вариативного шрифта указаны верные форматы: как обновленный woff2 supports variations, так и устаревающий woff2-variations;" - это из чек листа. 
+      */
       url(./Inter-Variable.woff2) format('woff2-variations'),
       url(./Inter-Variable.woff) format('woff supports variations'),
       url(./Inter-Variable.woff) format('woff-variations'),
@@ -21,7 +23,11 @@
   font-display: swap;
 }
 
-@font-face {
+@font-face { /* Что касается подключения не вариативного шрифта, я прочёл в спринте, что старые браузеры не поддерживают вариативные шрифты, и что хорошей практикой будет оставлять фолбэк для старых браузеров. Понятно, что в нашем случае оно не надо, я надеюсь))) Но посчитал, что для практики было бы не плохо использовать в своём проекте
+Я прописал для всей странице Inter, а потом сразу же проверил через сапорт поддержку вариативного шрифта, если поддерживается, то он подключается, сохраняется начертание и вес, а если нет, подключится обычный интер и сохранится только начертание.
+Изначально код был написан немного иначе, я проверял именно в местах где вариативный шрифт используется, получалось, что вне article был бы обычный инетер, пока писал комментарий, переписал код)
+  
+  */
   font-family: 'Inter';
   src: local('Inter'), 
       url(./Inter-Regular.woff2) format('woff2'),

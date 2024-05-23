@@ -24,6 +24,12 @@
   min-inline-size: 375px;
   min-block-size: 100dvb;
 }
+/* Вот тут проверяю поддержку вариативного шрифта */
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: var(--main-text, 'Inter-Variable'), sans-serif;
+  }
+}
 
 /* HEADER */
 
@@ -150,10 +156,9 @@
 }
 
 @supports (font-variation-settings: normal) {
-    .article__title {
-        font-family: var(--main-text, 'Inter-Variable'), sans-serif;
-        font-variation-settings: 'wght' var(--title-weight, 700);
-    }
+  .article__title {
+    font-variation-settings: 'wght' var(--title-weight, 700);
+  }
 }
 
 .label__wrapper {
@@ -190,6 +195,7 @@
 }
 
 .image {
+  border-block: 2px solid var(--main-color, #000);
   display: block;
   object-fit: cover;
   object-position: center;
@@ -238,10 +244,9 @@
 }
 
 @supports (font-variation-settings: normal) {
-    .article__text {
-      font-family: var(--main-text, 'Inter-Variable'), sans-serif;
-      font-variation-settings: 'wght' var(--main-weight, 400);
-    }
+  .article__text {
+    font-variation-settings: 'wght' var(--main-weight, 400);
+  }
 }
 
 .wrapper__button {
@@ -254,7 +259,6 @@
 .card__icon-button {
   display: flex;
   align-items: center;
-  border: none;
   border: 2px solid transparent;
   padding: 0;
   background-color: inherit;
@@ -401,7 +405,6 @@
   border: 2px solid var(--main-color, #000);
   padding: 30px;
   background-color: var(--background-color, #fff);
-  animation: open  0.5s linear;
   inline-size: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
 }
 
