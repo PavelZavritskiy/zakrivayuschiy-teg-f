@@ -163,6 +163,7 @@
 
 .label__wrapper {
   position: relative;
+  border-block: 2px solid var(--main-color, #000);
 }
 
 .label {
@@ -196,7 +197,6 @@
 
 .image {
   display: block;
-  border-block: 2px solid var(--main-color, #000);
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
