@@ -1,37 +1,20 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-*/
-
- /* Как я понял, надо было перенести то, что касается анимации, в этот файл, надеюсь верно сделал */
-
 .theme-menu__button:disabled:before {
   animation: slide-left 0.5s ease-in-out infinite alternate;
 }
 
 .like-icon.is-liked .core {
   fill: var(--accent-color-heart, #FF0000);
-  animation: colored 0.3s ease-in-out 1 alternate;
+  animation: colored 0.3s ease-in-out;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--accent-color-heart, #FF0000);
-  animation: colored 0.3s ease-in-out 1 alternate 0.06s;
+  animation: colored 0.3s ease-in-out 0.06s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--accent-color-heart, #FF0000);
-  animation: colored 0.3s ease-in-out 1 alternate 0.06s;
+  animation: colored 0.3s ease-in-out 0.06s;
 }
 
 .like-icon.is-liked .heart {
@@ -43,7 +26,7 @@
 } 
 
 .dialog {
-  animation: appearance  0.5s linear 1 alternate;
+  animation: appearance  0.5s linear 1;
 }
 
 @keyframes slide-left {
